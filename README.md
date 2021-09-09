@@ -6,9 +6,8 @@
  <details>
   <summary><strong>Aumento Salário</strong></summary>
     <br/>
-    <div align="left">
-        <table border=1>
-            <div align=center><h3>ENUNCIADO</h3></div>
+ 
+ <div align="center"><h3>ENUNCIADO<h3></div>
 
 ```
 Fazer um programa para ler um número inteiro N e depois os dados (id, nome e salario) de N funcionários. Não deve haver 
@@ -23,7 +22,8 @@ salário só pode ser aumentado com base em uma operação de aumento por porcen
 ```
 
 
-### EXEMPLO 1:
+<div align="center"><h3>RESULTADO 1<h3></div>
+ 
 ```
 How many employees will be registered? 3
 
@@ -51,7 +51,8 @@ List of employees:
 772, Bob Green, 5000.00
 ```
 
-### EXEMPLO 2:
+<div align="center"><h3>RESULTADO 2<h3></div>
+
 ```
 How many employees will be registered? 2
 
