@@ -93,7 +93,7 @@ houver, conforme exemplo.
  
 ```
 <p align="center">
-  <img src="./assets/resultado.png" alt="resultado">
+  <img src="./assets/Resultado-Matriz-MN.png" alt="resultado">
 </p>
 ```
  </details>
