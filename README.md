@@ -74,3 +74,26 @@ List of employees:
 536, Alex Grey, 3000.00
 ```
 </details>
+
+<details>
+
+<summary><strong>Matriz M e N Posição</strong></summary>
+    <br/>
+ 
+ <div align="center"><h3>ENUNCIADO<h3></div>
+
+```
+Fazer um programa para ler dois números inteiros M e N, e depois ler uma matriz de M linhas por N colunas
+contendo números inteiros, podendo haver repetições. Em seguida, ler um número inteiro X que pertence à 
+matriz. Para cada ocorrência de X, mostrar os valores à esquerda, acima, à direita e abaixo de X, quando 
+houver, conforme exemplo.
+```
+
+<div align="center"><h3>RESULTADO<h3></div>
+ 
+```
+<p align="center">
+  <img src="./assets/resultado.png" alt="resultado">
+</p>
+```
+ </details>
