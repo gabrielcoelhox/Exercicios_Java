@@ -88,12 +88,10 @@ contendo números inteiros, podendo haver repetições. Em seguida, ler um núme
 matriz. Para cada ocorrência de X, mostrar os valores à esquerda, acima, à direita e abaixo de X, quando 
 houver, conforme exemplo.
 ```
-
-<div align="center"><h3>RESULTADO<h3></div>
- 
-```
+ <div align="center"><h3>RESULTADO<h3></div>
+  
 <p align="center">
-  <img src="./assets/Resultado-Matriz-MN.png" alt="resultado">
-</p>
-```
+<img src="/Matriz_MN_Posicao/assets/resultado.png" alt="resultado" width="300px" height="350px"/>
+  </p>
+ 
  </details>
