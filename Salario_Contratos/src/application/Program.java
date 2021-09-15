@@ -26,7 +26,7 @@ public class Program {
 		System.out.print("Enter the department's name: ");
 		String departmentName = sc.nextLine();
 		
-		System.out.print("Enter worker data:");
+		System.out.println("Enter worker data:");
 		System.out.print("Name: ");
 		String name = sc.nextLine();		
 		System.out.print("Level: ");
@@ -36,11 +36,13 @@ public class Program {
 		
 		Worker worker = new Worker(name, WorkerLevel.valueOf(level), baseSalary, new Department(departmentName));
 		
+		System.out.println();
 		System.out.print("How many contracts to this worker? ");
+		System.out.println();
 		int contracts = sc.nextInt();
 		
-		for(int i=0; i<=contracts; i++) {
-			System.out.print("Enter contract #"+ contracts + " data: ");
+		for(int i=1; i<=contracts; i++) {
+			System.out.print("Enter contract #"+ i + " data: ");
 			System.out.print("Date (DD/MM/YYYY): ");
 			Date contractDate = sdf.parse(sc.next());
 			System.out.print("Value per hour: ");
@@ -51,6 +53,15 @@ public class Program {
 			HourContract contract = new HourContract(contractDate, valuePerHour, hours);
 			worker.addContract(contract);
 		}
+		
+		System.out.println();
+		System.out.print("Enter month and year to calculate income (MM/YYYY): ");
+		String dateCalc = sc.next();
+		int month = Integer.parseInt(dateCalc.substring(0, 2));
+		int year = Integer.parseInt(dateCalc.substring(3));
+		System.out.println("Name: " + worker.getName());
+		System.out.println("Department: " + worker.getDepartment().getName());
+		System.out.println("Income for " + dateCalc + ": " + String.format("%.2f", worker.income(year, month)));
 		
 		
 		sc.close();
