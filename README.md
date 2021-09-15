@@ -1,4 +1,4 @@
-<p align="center"><strong>💻 Atualizado em 09 de Setembro de 2021 💻</strong></p>
+<p align="center"><strong>💻 Atualizado em 15 de Setembro de 2021 💻</strong></p>
 
 <h2 align="center">Exercícios Linguagem JAVA</h2>
 
@@ -74,9 +74,27 @@ List of employees:
 536, Alex Grey, 3000.00
 ```
 </details>
-
+ 
+ <!-- Conta Bancária -->
 <details>
+ <summary><strong>Conta Bancária</strong></summary>
+ 
+ </details>
+ 
+ <!-- Estoque -->
+<details>
+ <summary><strong>Estoque</strong></summary>
+ 
+ </details>
+ 
+ <!-- Matriz Diagonal -->
+<details>
+ <summary><strong>Matriz Diagonal</strong></summary>
+ 
+ </details>
 
+<!-- Matriz M e N Posição -->
+<details>
 <summary><strong>Matriz M e N Posição</strong></summary>
     <br/>
  
@@ -93,5 +111,22 @@ houver, conforme exemplo.
 <p align="center">
 <img src="/Matriz_MN_Posicao/assets/resultado.png" alt="resultado" width="300px" height="350px"/>
   </p>
+ </details>
+  
+<!-- Média Alunos -->
+<details>
+ <summary><strong>Média Alunos</strong></summary>
+ 
+ </details>
+ 
+<!-- Post Rede Social -->
+<details>
+ <summary><strong>Post Rede Social</strong></summary>
+ 
+  </details>
+  
+<!-- Salário Contratos -->
+<details>
+ <summary><strong>Salário Contratos</strong></summary>
  
  </details>
