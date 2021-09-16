@@ -14,6 +14,7 @@ import entities.Product;
 import entities.enums.OrderStatus;
 import entities.OrderItem;
 import entities.Client;
+import entities.Order;
 
 public class Program {
 
@@ -24,7 +25,7 @@ public class Program {
 		
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 		
-		//PARTE 01 - Entrada de dados
+		// PARTE 01 - Entrada de dados
 		
 		System.out.println("Enter cliente data:");
 		System.out.print("Name: ");
@@ -36,14 +37,17 @@ public class Program {
 		
 		Client client = new Client(clientName, email, birthDate);
 		
-		//PARTE 02 - Lendo dados do pedido
+		// PARTE 02 - Lendo dados do pedido
 		
 		System.out.println();
 		System.out.println("Enter order data:");
 		System.out.print("Status: ");
 		OrderStatus status = OrderStatus.valueOf(sc.next());
 		
+		Order order = new Order(new Date(), status, client); // Horário do sistema
+		
 		System.out.print("How many items to this order? ");
+		System.out.println();
 		int itemQuantity = sc.nextInt();
 		for(int i = 1; i<=itemQuantity; i++) {
 			System.out.println("Enter #"+ i + " item data:");
@@ -52,13 +56,20 @@ public class Program {
 			String productName = sc.nextLine();
 			System.out.print("Product price: ");
 			double productPrice = sc.nextDouble();
-			System.out.print("Quantity: ");
-			int quantity = sc.nextInt();
-			
 			
 			Product product = new Product(productName, productPrice);
 			
+			System.out.print("Quantity: ");
+			int quantity = sc.nextInt();
+			
+			OrderItem orderItem = new OrderItem(quantity, productPrice, product); 
+			
+			order.addItem(orderItem);
 		}
+		
+		System.out.println();
+		System.out.println("ORDER SUMMARY:");
+		System.out.println(order);
 		
 		sc.close();
 	}
