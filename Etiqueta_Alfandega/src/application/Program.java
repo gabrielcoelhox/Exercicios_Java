@@ -46,9 +46,9 @@ public class Program {
 			
 			System.out.print("Name: ");
 			sc.nextLine();
-			String name = sc.next();
+			String name = sc.nextLine();
 			System.out.print("Price: ");
-			Double price = sc.nextDouble();
+			double price = sc.nextDouble();
 			
 			if (type == 'c' || type == 'C') {
 				list.add(new Product(name, price));
@@ -58,19 +58,17 @@ public class Program {
 				list.add(new UsedProduct(name, price, date));
 			} else {
 				System.out.print("Customs fee: ");
-				Double fee = sc.nextDouble();
+				double fee = sc.nextDouble();
 				list.add(new ImportedProduct(name, price, fee));
 			}
-			
-			System.out.println();
-			System.out.println("* PRICE TAGS *");
-			for (Product prod : list) {
-				System.out.println(prod.priceTag());
-			}
-			
-			sc.close();
 		}
-
+		
+		System.out.println();
+		System.out.println("* PRICE TAGS *");
+		for (Product prod : list) {
+			System.out.println(prod.priceTag());
+		}
+		
+		sc.close();
 	}
-
 }
