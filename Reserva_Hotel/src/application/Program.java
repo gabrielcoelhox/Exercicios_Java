@@ -59,9 +59,10 @@ public class Program {
 			System.out.println("Invalid date format");
 		} catch (DomainException e) { //Caso no updateDates do bloco try seja lançada essa exceção
 			System.out.println("Error in reservation: " + e.getMessage());
+		} catch (RuntimeException e) {
+			System.out.println("Unexpected error");
 		}
 		
 		sc.close();
 	}
-
 }
