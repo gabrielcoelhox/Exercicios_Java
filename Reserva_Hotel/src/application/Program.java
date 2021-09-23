@@ -28,6 +28,8 @@ public class Program {
 		
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 		
+		//PARTE 01 - Inserção de Dados
+		
 		System.out.print("Room number: ");
 		int number = sc.nextInt();
 		System.out.print("Check-in date (dd/MM/yyyy): ");
@@ -35,11 +37,33 @@ public class Program {
 		System.out.print("Check-Out date (dd/MM/yyyy): ");
 		Date checkOut = sdf.parse(sc.next());
 		
+		//PARTE 02 - Checando se a data de checkout é anterior a de checkin
+		
 		if (!checkOut.after(checkIn)) {
 			System.out.println("Error in reservation: Check-out date must be after check-in date");
 		} else {
 			Reservation reservation = new Reservation(number, checkIn, checkOut);
 			System.out.println("Reservation: " + reservation);
+			
+		//PARTE 03 - Update das datas
+			
+			System.out.println();
+			System.out.println("Enter data to update the reservation:");
+			System.out.print("Check-in date (dd/MM/yyyy): ");
+			checkIn = sdf.parse(sc.next());
+			System.out.print("Check-Out date (dd/MM/yyyy): ");
+			checkOut = sdf.parse(sc.next());
+			
+		//Checando se a data é anterior ao dia atual
+			Date now = new Date();
+			if (checkIn.before(checkOut) || checkOut.before(now)) {
+				System.out.println("Error in reservation: Reservation dates for update must be future dates");
+			} else if (!checkOut.after(checkIn)) {  // Se a data de checkOut *NÃO* for posterior a data de checkIn
+				System.out.println("Error in reservation: Check-out date must be after check-in date");
+			} else {
+				reservation.updateDates(checkIn, checkOut); // atualiza as datas
+				System.out.println("Reservation: " + reservation);
+			}
 		}
 		
 		sc.close();
