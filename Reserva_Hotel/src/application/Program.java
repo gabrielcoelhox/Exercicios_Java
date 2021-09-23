@@ -55,13 +55,10 @@ public class Program {
 			checkOut = sdf.parse(sc.next());
 			
 		//Checando se a data é anterior ao dia atual
-			Date now = new Date();
-			if (checkIn.before(checkOut) || checkOut.before(now)) {
-				System.out.println("Error in reservation: Reservation dates for update must be future dates");
-			} else if (!checkOut.after(checkIn)) {  // Se a data de checkOut *NÃO* for posterior a data de checkIn
-				System.out.println("Error in reservation: Check-out date must be after check-in date");
+			String error = reservation.updateDates(checkIn, checkOut); // atualiza as datas
+			if (error != null) { // Se for diferente de nulo, existe alguma string contendo error
+				System.out.println("Error in reservation: " + error);
 			} else {
-				reservation.updateDates(checkIn, checkOut); // atualiza as datas
 				System.out.println("Reservation: " + reservation);
 			}
 		}
