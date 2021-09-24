@@ -1,5 +1,7 @@
 package entities;
 
+import exceptions.BusinessException;
+
 public class Account {
 
 	private Integer number;
@@ -58,4 +60,12 @@ public class Account {
 		balance -= amount;
 	}
 	
+	private void validateWithdraw(double amount) {
+		if (amount > getWithdrawLimit()) { // Se a quantia for maior que o limite de saque
+			throw new BusinessException("Withdraw error: The amount exceeds withdraw limit");
+		} 
+		if (amount > getBalance()) { // Se a quantia for maior que o saldo em conta
+			throw new BusinessException("Withdraw error: Not enough balance");
+		}
+	}
 }

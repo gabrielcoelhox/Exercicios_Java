@@ -11,6 +11,7 @@ import java.util.Locale;
 import java.util.Scanner;
 
 import entities.Account;
+import exceptions.BusinessException;
 
 public class Program {
 
@@ -19,6 +20,8 @@ public class Program {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 
+		//PARTE 01 - Inserção de dados
+		
 		System.out.println("Enter account data");
 		System.out.print("Number: ");
 		int number = sc.nextInt();
@@ -36,11 +39,15 @@ public class Program {
 		System.out.print("Enter amount for withdraw: ");
 		double amount = sc.nextDouble();
 	
+		//PARTE 02 - Tratando com exception
+		
 		try {
-			
+			acc.withdraw(amount);
+			System.out.println("New balance: " + String.format("%.2f", acc.getBalance()));
+		} catch(BusinessException e) {
+			System.out.println(e.getMessage());
 		}
 		
 		sc.close();
 	}
-
 }
