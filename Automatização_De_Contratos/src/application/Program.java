@@ -25,6 +25,8 @@ import java.util.Date;
 import java.util.Locale;
 import java.util.Scanner;
 
+import model.entities.Contract;
+
 public class Program {
 
 	public static void main(String[] args) throws ParseException {
@@ -38,11 +40,18 @@ public class Program {
 		System.out.print("Number: ");
 		int number = sc.nextInt();
 		System.out.print("Date (dd/MM/yyyy): ");
-		Date date = sdf.parse(sc.nextLine());
+		Date date = sdf.parse(sc.next());
 		System.out.print("Contract value: ");
-		double cv = sc.nextDouble();
+		double contractValue = sc.nextDouble();
+		
+		Contract contract = new Contract(number, date, contractValue);
+		
+		System.out.print("Enter number of installments: ");
+		int noi = sc.nextInt();
 		
 		
+		System.out.println();
+		System.out.println("Installments:");
 		
 		
 		sc.close();
