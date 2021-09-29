@@ -26,6 +26,9 @@ import java.util.Locale;
 import java.util.Scanner;
 
 import model.entities.Contract;
+import model.entities.Installment;
+import model.service.ContractService;
+import model.service.PaypalService;
 
 public class Program {
 
@@ -49,10 +52,15 @@ public class Program {
 		System.out.print("Enter number of installments: ");
 		int noi = sc.nextInt();
 		
+		ContractService contractService = new ContractService(new PaypalService());
+		contractService.processContract(contract, noi);
+
 		
 		System.out.println();
 		System.out.println("Installments:");
-		
+		for (Installment x : contract.getInstallments()) {
+			System.out.println(x);
+		}
 		
 		sc.close();
 	}

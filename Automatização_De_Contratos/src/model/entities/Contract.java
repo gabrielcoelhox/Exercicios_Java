@@ -10,7 +10,7 @@ public class Contract {
 	private Date date;
 	private Double totalValue;
 	
-	List<Installment> installments = new ArrayList<>();
+	private List<Installment> installments = new ArrayList<>();
 	
 	public Contract() {
 	}
@@ -52,7 +52,7 @@ public class Contract {
 	public void addInstallment(Installment installment) {
 		installments.add(installment);
 	}
-	
+
 	public void removeInstallment(Installment installment) {
 		installments.remove(installment);
 	}
