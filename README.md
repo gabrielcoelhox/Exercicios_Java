@@ -1,6 +1,62 @@
-<p align="center"><strong>💻 Atualizado em 15 de Setembro de 2021 💻</strong></p>
+<p align="center"><strong>💻 Atualizado em 30 de Setembro de 2021 💻</strong></p>
 
 <h2 align="center">Exercícios Linguagem JAVA</h2>
+
+<!-- Aluguel de Carros -->
+<details>
+ <summary><strong>Aluguel Carros</strong></summary>
+  <br/>
+ 
+  <div align="center"><h3>ENUNCIADO<h3></div>
+   
+ ```
+Uma locadora brasileira de carros cobra um valor por hora para locações de até 12 horas. Porém, se a 
+duração da locação ultrapassar 12 horas, a locação será cobrada com base em um valor diário. Além do 
+valor da locação, é acrescido no preço o valor do imposto conforme regras do país que, no caso do Brasil,
+é 20% para valores até 100.00, ou 15% para valores acima de 100.00. Fazer um programa que lê os dados da 
+locação (modelo do carro, instante inicial e final da locação), bem como o valor por hora e o valor 
+diário de locação. O programa deve então gerar a nota de pagamento (contendo valor da locação, valor do
+imposto e valor total do pagamento) e informar os dados na tela. Veja os exemplos.
+ ```
+   
+<div align="center"><h3>EXEMPLO 1<h3></div>
+ 
+<p align="center">
+<img src="/Aluguel_Carros/assets/Exemplo01.png" alt="exemplo01" width="300px" height="350px"/>
+</p>
+ 
+<div align="center"><h3>EXEMPLO 2<h3></div>
+ 
+<p align="center">
+<img src="/Aluguel_Carros/assets/Exemplo02.png" alt="exemplo02" width="300px" height="350px"/>
+</p>
+ 
+<div align="center"><h3>COMPOSIÇÃO<h3></div>
+
+<p align="center">
+<img src="/Aluguel_Carros/assets/Entities.png" alt="entities" width="300px" height="350px"/>
+</p>
+
+<br/>
+ 
+<p align="center">
+<img src="/Aluguel_Carros/assets/Services.png" alt="services" width="300px" height="350px"/>
+</p>
+ 
+<br/> 
+
+<p align="center">
+<img src="/Aluguel_Carros/assets/DomainLayerDesign.png" alt="domainLayerDesign" width="300px" height="350px"/>
+</p>
+ 
+<br/>
+ 
+<p align="center">
+<img src="/Aluguel_Carros/assets/ServiceLayerDesign.png" alt="serviceLayerDesign" width="300px" height="350px"/>
+</p>
+ 
+ 
+ </details>
 
 <!-- Aumento Salário dos Funcionários -->
  <details>
