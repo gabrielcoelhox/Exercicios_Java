@@ -159,11 +159,11 @@ dados das parcelas na tela.
 <div align="center"><h3>COMPOSIÇÃO<h3></div>
  
 <p align="center">
-<img src="/Automatização_De_Contratos/assets/DomainLayerDesign.png" alt="DominLayer" width="750px" height="380px"/>
+<img src="/Automatização_De_Contratos/assets/DomainLayerDesign.png" alt="DominLayer" width="700px" height="250px"/>
 </p>
  
 <p align="center">
-<img src="/Automatização_De_Contratos/assets/ServiceLayerDesign.png" alt="ServiceLayer" width="750px" height="380px"/>
+<img src="/Automatização_De_Contratos/assets/ServiceLayerDesign.png" alt="ServiceLayer" width="700px" height="250px"/>
 </p>
 
 </details>
@@ -221,8 +221,24 @@ houver, conforme exemplo.
   
 <!-- Salário Contratos -->
 <details>
- <summary><strong>Salário Contratos</strong></summary>
+<summary><strong>Salário Contratos</strong></summary>
+
+<div align="center"><h3>ENUNCIADO<h3></div>
+
+```
+Ler os dados de um trabalhador com N contratos (N fornecido pelo usuário). Depois, solicitar do usuário um
+mês e mostrar qual foi o salário do funcionário nesse mês, conforme exemplo:
+```
+<p align="center">
+<img src="/Salario_Contratos/assets/aa.png" alt="aa" width="500px" height="300px"/>
+</p>
  
+<div align="center"><h3>EXEMPLO<h3></div>
+ 
+<p align="center">
+<img src="/Salario_Contratos/assets/Exemplo.png" alt="exemplo" width="500px" height="300px"/>
+</p>
+
  </details>
   
  <!-- Saque Conta Bancária -->
@@ -236,7 +252,32 @@ Fazer um programa para ler os dados de uma conta bancária e depois realizar um 
 mostrando o novo saldo. Um saque não pode ocorrer ou se não houver saldo na conta, ou se o valor do saque 
 for superior ao limite de saque da conta. Implemente a conta bancária conforme projeto abaixo:
 ```
+<p align="center">
+<img src="/Saque_Conta_Bancaria/assets/aa.png" alt="aa" width="235px" height="200px"/>
+ </p>
 
+<div align="center"><h3>EXEMPLO 01<h3></div>
+ 
+<p align="center">
+<img src="/Saque_Conta_Bancaria/assets/Exemplo01.png" alt="exemplo01" width="235px" height="200px"/>
+</p>
+ 
+<div align="center"><h3>EXEMPLO 02<h3></div> 
+ 
+<p align="center">
+<img src="/Saque_Conta_Bancaria/assets/Exemplo02.png" alt="exemplo02" width="235px" height="200px"/>
+</p>
 
+<div align="center"><h3>EXEMPLO 03<h3></div> 
+
+<p align="center">
+<img src="/Saque_Conta_Bancaria/assets/Exemplo03.png" alt="exemplo03" width="235px" height="200px"/>
+</p>
+
+<div align="center"><h3>EXEMPLO 04<h3></div> 
+ 
+<p align="center">
+<img src="/Saque_Conta_Bancaria/assets/Exemplo04.png" alt="exemplo04" width="235px" height="200px"/>
+</p>
  
  </details>
