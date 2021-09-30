@@ -22,37 +22,37 @@ imposto e valor total do pagamento) e informar os dados na tela. Veja os exemplo
 <div align="center"><h3>EXEMPLO 1<h3></div>
  
 <p align="center">
-<img src="/Aluguel_Carros/assets/Exemplo01.png" alt="exemplo01" width="300px" height="350px"/>
+<img src="/Aluguel_Carros/assets/Exemplo01.png" alt="exemplo01" width="750px" height="380px"/>
 </p>
  
 <div align="center"><h3>EXEMPLO 2<h3></div>
  
 <p align="center">
-<img src="/Aluguel_Carros/assets/Exemplo02.png" alt="exemplo02" width="300px" height="350px"/>
+<img src="/Aluguel_Carros/assets/Exemplo02.png" alt="exemplo02" width="750px" height="380px"/>
 </p>
  
 <div align="center"><h3>COMPOSIÇÃO<h3></div>
 
 <p align="center">
-<img src="/Aluguel_Carros/assets/Entities.png" alt="entities" width="300px" height="350px"/>
+<img src="/Aluguel_Carros/assets/Entities.png" alt="entities" width="750px" height="380px"/>
 </p>
 
 <br/>
  
 <p align="center">
-<img src="/Aluguel_Carros/assets/Services.png" alt="services" width="300px" height="350px"/>
+<img src="/Aluguel_Carros/assets/Services.png" alt="services" width="750px" height="300px"/>
 </p>
  
 <br/> 
 
 <p align="center">
-<img src="/Aluguel_Carros/assets/DomainLayerDesign.png" alt="domainLayerDesign" width="300px" height="350px"/>
+<img src="/Aluguel_Carros/assets/DomainLayerDesign.png" alt="domainLayerDesign" width="600px" height="210px"/>
 </p>
  
 <br/>
  
 <p align="center">
-<img src="/Aluguel_Carros/assets/ServiceLayerDesign.png" alt="serviceLayerDesign" width="300px" height="350px"/>
+<img src="/Aluguel_Carros/assets/ServiceLayerDesign.png" alt="serviceLayerDesign" width="750px" height="300px"/>
 </p>
  
  
@@ -131,6 +131,44 @@ List of employees:
 ```
 </details>
  
+<!-- Automatização de Contratos -->
+<details>
+<summary><strong>Automatização de Contratos</strong></summary>
+ 
+<div align="center"><h3>ENUNCIADO<h3></div>
+   
+ ```
+Uma empresa deseja automatizar o processamento de seus contratos. O processamento de um contrato consiste
+em gerar as parcelas a serem pagas para aquele contrato, com base no número de meses desejado. A empresa 
+utiliza um serviço de pagamento online para realizar o pagamento das parcelas. Os serviços de pagamento 
+online tipicamente cobram um juro mensal, bem como uma taxa por pagamento. Por enquanto, o serviço 
+contratado pela empresa é o do Paypal, que aplica juros simples de 1% a cada parcela, mais uma taxa de 
+pagamento de 2%. Fazer um programa para ler os dados de um contrato (número do contrato, data do contrato, 
+e valor total do contrato). Em seguida, o programa deve ler o número de meses para parcelamento do contrato, 
+e daí gerar os registros de parcelas a serem pagas (data e valor), sendo a primeira parcela a ser paga um 
+mês após a data do contrato, a segunda parcela dois meses após o contrato e assim por diante. Mostrar os 
+dados das parcelas na tela.
+ ```
+ 
+<div align="center"><h3>EXEMPLO<h3></div>
+ 
+<p align="center">
+<img src="/Automatização_De_Contratos/assets/Exemplo.png" alt="exemplo" width="750px" height="380px"/>
+</p>
+
+<div align="center"><h3>COMPOSIÇÃO<h3></div>
+ 
+<p align="center">
+<img src="/Automatização_De_Contratos/assets/DomainLayerDesign.png" alt="DominLayer" width="750px" height="380px"/>
+</p>
+ 
+<p align="center">
+<img src="/Automatização_De_Contratos/assets/ServiceLayerDesign.png" alt="ServiceLayer" width="750px" height="380px"/>
+</p>
+
+</details>
+
+ 
  <!-- Conta Bancária -->
 <details>
  <summary><strong>Conta Bancária</strong></summary>
@@ -184,5 +222,21 @@ houver, conforme exemplo.
 <!-- Salário Contratos -->
 <details>
  <summary><strong>Salário Contratos</strong></summary>
+ 
+ </details>
+  
+ <!-- Saque Conta Bancária -->
+<details>
+ <summary><strong>Saque Conta Bancária</strong></summary>
+ 
+<div align="center"><h3>ENUNCIADO<h3></div>
+ 
+```
+Fazer um programa para ler os dados de uma conta bancária e depois realizar um saque nesta conta bancária,
+mostrando o novo saldo. Um saque não pode ocorrer ou se não houver saldo na conta, ou se o valor do saque 
+for superior ao limite de saque da conta. Implemente a conta bancária conforme projeto abaixo:
+```
+
+
  
  </details>
